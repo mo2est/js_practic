@@ -37,3 +37,31 @@ const varArr = [1, 2, 3];
 varArr[3] = 4;
 
 console.log(varArr[0]);
+
+
+/* /////////////////////////// */
+/* 20/12/2023 */
+/* /////////////////////////// */
+
+/* alert('Hello') */
+
+/* const answer = confirm('Вам есть 18?');
+console.log(answer); */
+
+
+/* const answer = +prompt('Сколько Вам лет?', '');
+console.log(answer + 5); */
+
+
+/* const answers = [];
+
+answers[0] = prompt('Как Ваше имя?','');
+answers[1] = prompt('Какая Ваша фамилия?','');
+answers[2] = prompt('Сколько Вам лет?','');
+
+console.log(answers); */
+
+
+const user = 'Андрей';
+
+alert(`Привет, ${user}!`);
