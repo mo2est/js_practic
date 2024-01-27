@@ -1,67 +1,36 @@
-'use strict';
+'use stcict';
+////////////////////////////////////
+let numberOfNothing = 5;
+const leftVechicleBorder = 10;
 
+numberOfNothing = 10;
+console.log(numberOfNothing);
+////////////////////////////////////
 const obj = {
-    userName: 'Andrew',
-    age: 30,
+    name: 'Andrew',
     isMarried: true,
-    wifeName: 'Irina',
-    isChild: true,
-    childName: 'Michail'
-};
-console.log(obj.userName, obj.age, obj.isMarried, obj.wifeName, obj.isChild, obj.childName,);
-
-
-const arr = [1, 'Andrew', 'Irina', 'Michail', 3];
-console.log(arr[3]);
-
-/* /////////////////////////// */
-/* 18/12/2023 */
-/* /////////////////////////// */
-
-
-/* Object */
-const shopObj = {
-    tomatoes: 5,
-    bread: 3,
-    cheese: 5
+    child: true
 };
 
-shopObj.apple = 10;
+/* console.log(obj.child); */
+console.log(obj['isMarried']);
 
-console.log(shopObj['apple']);
-console.log(shopObj.apple)
+let arr = ['Andrew', 'Irina', 'Michail'];
 
+console.log(arr[2]);
+////////////////////////////////////
+/* alert('Hello');
 
-/* Array */
-const varArr = [1, 2, 3];
-varArr[3] = 4;
+const result = confirm('Are you here?');
+console.log(result); */
 
-console.log(varArr[0]);
-
-
-/* /////////////////////////// */
-/* 20/12/2023 */
-/* /////////////////////////// */
-
-/* alert('Hello') */
-
-/* const answer = confirm('Вам есть 18?');
+/* const answer = prompt("Вам есть 18?", "");
 console.log(answer); */
 
+const answers = [];
 
-/* const answer = +prompt('Сколько Вам лет?', '');
-console.log(answer + 5); */
+answers[0] = prompt('Как Вас зовут?', '');
+answers[1] = prompt('Сколько Вам лет?', '');
+answers[2] = prompt('Откуда Вы?', '');
 
-
-/* const answers = [];
-
-answers[0] = prompt('Как Ваше имя?','');
-answers[1] = prompt('Какая Ваша фамилия?','');
-answers[2] = prompt('Сколько Вам лет?','');
-
-console.log(answers); */
-
-
-const user = 'Андрей';
-
-alert(`Привет, ${user}!`);
+console.log(answers);
