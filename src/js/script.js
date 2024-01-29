@@ -14,7 +14,7 @@ const obj = {
 
 /* console.log(obj.child); */
 console.log(obj['isMarried']);
-
+////////////////////////////////////
 let arr = ['Andrew', 'Irina', 'Michail'];
 
 console.log(arr[2]);
@@ -34,3 +34,29 @@ answers[1] = prompt('Сколько Вам лет?', '');
 answers[2] = prompt('Откуда Вы?', '');
 
 console.log(answers);
+
+//////Интерполяция использование переменной внутри строки(именно через ``)\\\\\\\
+
+const user = 'Андрей';
+
+alert(`Привет, ${user}`);
+
+///////////////////////////////////
+//Префиксная форма//
+let incr = 10;
+let decr = 10;
+
+console.log(++incr);
+console.log(--decr);
+
+//Постфиксная форма//
+let incr = 10;
+let decr = 10;
+
+console.log(incr++);
+console.log(decr--);
+//////////////////////////////////
+/*И - &&, ИЛИ - ||, % - остаток от деления, ! - отрицание (не)  */
+//////////////////////////////////
+
+
