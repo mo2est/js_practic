@@ -79,3 +79,38 @@ const a = prompt('Один из последних просмотренных ф
       personalMovieDB.movies[c] = d;
  
       console.log(personalMovieDB);
+
+
+/////Циклы///////////////////////////
+
+const num = 50;
+
+if (num < 30) {
+    console.log ('Слишком мало нахрен!')
+} else if ( num > 70) {
+    console.log('Воу воу полегче!')
+} else if (num == 50) {
+    console.log('Йоу мэээн, вэри гуууд!')
+} else {
+    console.log('Вообще без вариантов браза')
+}
+
+(num == 50) ? console.log('в точку!') : console.log('мимо!')
+
+
+const box = 102;
+
+switch (box) {
+    case 99: 
+        console.log('Почти')
+        break;
+    case 101:
+        console.log('Лишка')
+        break;
+    case 100:
+        console.log('В самое яблочко')
+        break;
+    default:
+        console.log('Не сегодня парень!')
+        break;
+}
