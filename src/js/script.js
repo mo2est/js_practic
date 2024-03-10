@@ -69,16 +69,16 @@ const personalMovieDB = {
     privat: false
 };
 
+for(i = 0; i < 2, i++) {
 const a = prompt('Один из последних просмотренных фильмов?',''),
-      b = +prompt('На сколько его оцените?',''),
-      c = prompt('Один из последних просмотренных фильмов?',''),
-      d = +prompt('На сколько его оцените?','');
+      b = +prompt('На сколько его оцените?','');
 
 
-      personalMovieDB.movies[a] = b;
-      personalMovieDB.movies[c] = d;
- 
-      console.log(personalMovieDB);
+    personalMovieDB.movies[a] = b;
+    personalMovieDB.movies[c] = d;
+}
+
+console.log(personalMovieDB);
 
 
 /////Циклы///////////////////////////
@@ -182,12 +182,12 @@ let num = 50;
     num++;
 } */
 
-/* do {
+do {
     console.log(num);
     num++;
 }
 
-while(num <= 55); */
+while(num <= 55); 
 
 /* for (let i = 1; i <= 8; i++) {
     console.log(num);
@@ -278,3 +278,48 @@ while (i < 16) {
     }
 
     console.log(arrayOfNumbers);
+    ////////////////////////////////
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        result[i] = arr[i];
+    }
+
+    console.log(result);
+    ////////////////////////////////
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+    for (let i = 0; i < data.length; i++) {
+        if (typeof(data[i]) === 'number') {
+            data[i] = data[i] * 2;
+        } else if (typeof(data[i]) === 'string') {
+            data[i] = `${data[i]} - done`;
+        }
+    }
+
+    console.log(data);
+    //////////////////////////////////////
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
+
+    for (let i = 1; i <= data.length; i++) {
+        result[i - 1] = data[data.length - i]
+    }
+
+    console.log(result);
+    //////////////////////////////////////
+    const lines = 5;
+    let result = '';
+
+    for (let i = 0; i <= lines; i++) {
+        for (let j = 0; j < lines - i; j++) {
+        result += " ";
+        }
+        for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+        }
+    result += "\n";
+}
+
+console.log(result)
